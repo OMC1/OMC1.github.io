@@ -21,7 +21,7 @@
 			<!-- <video id="video" src="video.mp4"></video> -->
 		</a-assets>
 
-		<a-circle radius="0.5" segments="32" position="2 1 -2" rotation="0 0 0" material="color: #fff; shader: flat; opacity: 0.3" href="https://omc1.github.io/">
+		<a-circle radius="0.5" segments="32" position="2 1 -2" rotation="0 0 0" material="color: #fff; shader: flat; opacity: 0.5" href="https://omc1.github.io/">
 			<a-event name="mouseenter" material.opacity="0.8"></a-event>
 			<a-event name="mouseleave" material.opacity="0.3"></a-event>
 		</a-circle>
@@ -29,7 +29,7 @@
 		<a-circle radius="5" segments="128" position="0 -10 0" rotation="-90 0 0" color="#FFF" src="#patch">
 		</a-circle>
 
-		<a-sky src="#bg"></a-sky>
+		<a-sky src="#bg" rotation="0 90 0"></a-sky>
 
 		<a-camera position="0 0 0">
 			<a-cursor fuse="true" position="0 0 -1" scale="0.01 0.01 0.01" geometry="primitive: ring" material="color: #fff; shader: flat">
