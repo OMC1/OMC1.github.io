@@ -17,7 +17,8 @@
     <a-scene>
     
 	<a-assets>
-		<img id="bg" src="img/checkerboard.jpg">
+		<img id="bg-enter" src="img/lab_car_1.JPG">
+		<img id="bg-car" src="img/lab_car_2.JPG">
 		<img id="patch" src="img/visa_logo.jpg">
 		<img id="demo1" src="img/demo_1.jpg">
 		<img id="btn-enter" src="img/button_enter.png">
@@ -69,7 +70,10 @@
      <a-circle radius="5" segments="128" position="0 -10 0" rotation="-90 0 0" color="#FFF" src="#patch">
      </a-circle>
      
-      <a-sky src="#bg"></a-sky>
+      <a-sky src="#bg-enter">
+		  <a-animation begin="fade" easing="ease-in" attribute="scale" fill="backwards" from="1 1 1" to="0.5 0.5 0.5" dur="1000"></a-animation>
+ 		  <a-animation begin="fade" easing="ease-in" attribute="material.opacity" fill="backwards" from="1 1 1" to="0 0 0" dur="1000" ></a-animation>
+     </a-sky>
 
       
 	  <a-camera position="0 0 0">
@@ -81,33 +85,35 @@
     </a-scene>
   </body>
 
-<!--
+
 <script>
 	$('a-curvedimage.enter').click(function() {
 		$('a-sky').attr('src','#bg-enter');
+		$('a-sky').emit('fade');
 	});
 	
 	$('a-curvedimage.car').click(function() {
 		$('a-sky').attr('src','#bg-car');
+		$('a-sky').emit('fade');
 	});
 
-	$('a-curvedimage.home').click(function() {
-		$('a-sky').attr('src','#bg-home');
-	});
-
-	$('a-curvedimage.entertain').click(function() {
-		$('a-sky').attr('src','#bg-entertain');
-	});
-
-	$('a-curvedimage.retail').click(function() {
-		$('a-sky').attr('src','#bg-retail');
-	});
-
-	$('a-curvedimage.checkout').click(function() {
-		$('a-sky').attr('src','#bg-checkout');
-	});
+// 	$('a-curvedimage.home').click(function() {
+// 		$('a-sky').attr('src','#bg-home');
+// 	});
+// 
+// 	$('a-curvedimage.entertain').click(function() {
+// 		$('a-sky').attr('src','#bg-entertain');
+// 	});
+// 
+// 	$('a-curvedimage.retail').click(function() {
+// 		$('a-sky').attr('src','#bg-retail');
+// 	});
+// 
+// 	$('a-curvedimage.checkout').click(function() {
+// 		$('a-sky').attr('src','#bg-checkout');
+// 	});
 
 </script>
--->
+
 
 </html>
