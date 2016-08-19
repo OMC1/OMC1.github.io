@@ -18,21 +18,16 @@
 		<a-scene>
 
 		<a-assets>
-			<img id="bg1" src="img/lab_car_1.JPG">
-			<img id="bg2" src="img/lab_car_2.JPG">
+			<img id="bg1" src="img/room.JPG">
 			<img id="patch" src="img/visa_logo.jpg">
 			<!-- <video id="video" src="video.mp4"></video> -->
 		</a-assets>
 
-		<a-circle radius="0.5" segments="32" position="-1.5 -1 -5" rotation="-90 0 20" material="color: #fff; opacity: 0.6; shader: flat" href="https://omc1.github.io/page1.html">
-			<a-event name="mouseenter" material.opacity="0.8"></a-event>
-			<a-event name="mouseleave" material.opacity="0.6"></a-event>
+
+		<a-circle radius="4" segments="128" position="0 -10 0" rotation="-90 0 0" color="#FFF" src="#patch">
 		</a-circle>
 
-		<a-circle radius="5" segments="128" position="0 -10 0" rotation="-90 0 0" color="#FFF" src="#patch">
-		</a-circle>
-
-		<a-sky src="#bg1" rotation="0 90 0"></a-sky>
+		<a-sky src="#bg1" rotation="0 0 0"></a-sky>
 
 		<a-camera position="0 0 0">
 			<a-cursor fuse="true" position="0 0 -1" scale="0.01 0.01 0.01" geometry="primitive: ring" material="color: #fff; shader: flat">
