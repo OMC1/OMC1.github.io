@@ -19,15 +19,14 @@
 
 		<a-assets>
 			<img id="bg1" src="img/checkerboard.jpg">
-			<a-asset-item id="table-obj" src="obj/coffee_table.obj"></a-asset-item>
+			<a-asset-item id="chair1-obj" src="img/chair1.obj"></a-asset-item>
+			<a-asset-item id="chair1-mtl" src="img/chair1.mtl"></a-asset-item>
 			<!-- <video id="video" src="video.mp4"></video> -->
 		</a-assets>
 
-		<a-obj-model  scale="0.01 0.01 0.01" src="#table-obj"></a-obj-model>
+		<a-obj-model  scale="0.01 0.01 0.01" src="#chair1-obj" mtl="#chair1-mtl"></a-obj-model>
 
-<!--		<a-circle radius="4" segments="128" position="0 -10 0" rotation="-90 0 0" color="#FFF" src="#patch"></a-circle> -->
-
-		<a-sky src="#bg1" rotation="0 -90 0"></a-sky>
+		<a-sky src="#bg1" rotation="0 -45 0"></a-sky>
 
 		<a-camera position="0 0 0">
 			<a-cursor fuse="true" position="0 0 -1" scale="0.01 0.01 0.01" geometry="primitive: ring" material="color: #fff; shader: flat">
