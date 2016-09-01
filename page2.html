@@ -19,6 +19,7 @@
 
 		<a-assets>
 			<img id="bg1" src="img/room.jpg">
+			<img id="back" src="img/back.png">
 			<img id="item1" src="img/item1.jpg">
 			<img id="item2" src="img/item2.jpg">
 			<img id="item3" src="img/item3.jpg">
@@ -26,7 +27,7 @@
 			<!-- <video id="video" src="video.mp4"></video> -->
 		</a-assets>
 
-		<a-circle radius="0.3" segments="32" position="-2 1 -4" material="color: #fff; shader: flat; opacity: 0.6" href="https://omc1.github.io/">
+		<a-circle radius="0.3" segments="32" position="-2 1 -4" material="color: #fff; shader: flat; src: #back; opacity: 0.6" href="https://omc1.github.io/">
 			<a-event name="mouseenter" material.opacity="0.8"></a-event>
 			<a-event name="mouseleave" material.opacity="0.6"></a-event>
 		</a-circle>
