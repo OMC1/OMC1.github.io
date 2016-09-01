@@ -3,7 +3,7 @@
  */
 var deviceUpDown = {
   options: {
-    element: window, // document.querySelector('#id')
+    element: document.querySelector('a-circle.shopcart'), // window;
     upTarget: 20, // percent from top of window (0 - 100);
     downTarget: 70 // percent from top of window (0 - 100);
   },
