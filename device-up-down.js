@@ -62,13 +62,15 @@ var deviceUpDown = {
             upFired = true;
             downFired = false;
             element.dispatchEvent(upEvent);
-            alert("Up fired");
+            // alert("Up fired");
           }
 
           if (dir == -1 && currPos >= downTarget && !downFired) {
             downFired = true;
             upFired = false;
             element.dispatchEvent(downEvent);
+            // alert("Down fired");
+
           }
         }, 100);
       }
