@@ -62,6 +62,7 @@ var deviceUpDown = {
             upFired = true;
             downFired = false;
             element.dispatchEvent(upEvent);
+            alert("Up fired");
           }
 
           if (dir == -1 && currPos >= downTarget && !downFired) {
