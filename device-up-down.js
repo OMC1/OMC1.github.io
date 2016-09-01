@@ -5,7 +5,7 @@ var deviceUpDown = {
   options: {
     element: document.querySelector('a-circle.shopcart'), // window;
     upTarget: 20, // percent from top of window (0 - 100);
-    downTarget: 70 // percent from top of window (0 - 100);
+    downTarget: 30 // percent from top of window (0 - 100);
   },
   init: function(){
     var gamma;// -90 to 90
@@ -68,7 +68,6 @@ var deviceUpDown = {
             downFired = true;
             upFired = false;
             element.dispatchEvent(downEvent);
-            alert('down');
           }
         }, 100);
       }
