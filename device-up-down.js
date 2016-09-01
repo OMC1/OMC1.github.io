@@ -68,6 +68,7 @@ var deviceUpDown = {
             downFired = true;
             upFired = false;
             element.dispatchEvent(downEvent);
+            alert('down');
           }
         }, 100);
       }
