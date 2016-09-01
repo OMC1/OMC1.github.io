@@ -79,4 +79,3 @@ var deviceUpDown = {
 };
 
 deviceUpDown.init();
-</script>
