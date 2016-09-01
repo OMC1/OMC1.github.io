@@ -6,6 +6,7 @@
 		<meta name="description" content="Visa Innovation Lab Demo">
 		<script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
 		<script src="https://omc1.github.io/aframe-href-component.min.js"></script>
+		<script src="https://omc1.github.io/device-up-down.js"></script>
 <!-- 
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js"
 			integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
@@ -28,7 +29,12 @@
 			<a-event name="mouseleave" material.opacity="0.6"></a-event>
 		</a-circle>
 
-		<a-circle radius="5" segments="128" position="0 -10 -2" rotation="-90 0 0" color="#FFF" src="#cart"></a-circle>
+		<a-circle class="shopcart" radius="5" segments="128" position="0 -10 -2" rotation="-90 0 0" color="#FFF" src="#cart">
+				<a-animation begin="devicedown"></a-animation>
+<!-- 
+				<a-animation begin="devicedown" easing="ease-in" attribute="position" fill="backwards" from="0 -10 -2" to="0 -10 -10" dur="2000"></a-animation>
+ -->
+		</a-circle>
 
 		<a-sky src="#bg1" rotation="0 -90 0"></a-sky>
 
