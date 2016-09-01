@@ -1,5 +1,6 @@
 /**
  *  Use: <a-animation begin="devicedown"></a-animation>
+ *  Visa Inc. Script by Chase Martin, UX by Nathan Diesel 9-1-2016
  */
 var deviceUpDown = {
   options: {
