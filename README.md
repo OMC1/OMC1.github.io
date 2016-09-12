@@ -1,2 +1,2 @@
-# OMC1.github.io
-Visa Innovation Center Demo Site
+# NateDies.github.io
+Design project prototypes
